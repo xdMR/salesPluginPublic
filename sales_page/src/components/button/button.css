@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--buttonTextColor, #fff);
+    max-width: 15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.8em 2em;
+    background: var(--accent, black);
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 300ms ease-in-out, opacity 250ms linear;
+    border: 2px solid black;
+    transition:box-shadow 0.5s ease-in-out;
+}
+
+.btn:hover{
+    color:rgb(230, 229, 229);
+    cursor: pointer;
+    transform: scale(0.95);
+}
+/*  */
+.btn:active{
+
+}
+.btn-active {
+    cursor: pointer;
+    background-color:rgb(230, 230, 230);
+    color:black;
+    transform: scale(0.90);
+    border: 2px solid black;
+    box-shadow: inset 15em 0 0 0 rgb(0, 0, 0);
+    /* on hover BG becomes white and text black, black background starts sliding from left */
+    /* when black background is covering the button again, text needs to be white again, this is achieved with animation addColor */
+    animation: addColor 0.5s 1;
+    /* forwards is needed so that animation stays on the last frame (that text stays white and not black) */
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes addColor
+{
+    0%      {color:black;}
+    100%    {color:white;}
+}
+
+
+.btn-boring {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--buttonTextColor, #fff);
+    max-width: 15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.8em 2em;
+    background: var(--accent, black);
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 300ms ease-in-out, opacity 250ms linear;
+    margin: 0.35em;
+    border: 2px solid black;
+}
+.btn-boring:hover{
+    opacity: 0.9;
+    background-color: rgb(50, 50, 50);
+}

@@ -1,0 +1,172 @@
+.formfields{
+    margin-top:40px;
+}
+.formfields label{
+    padding-left: 5px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+.membersNumber{
+    text-align: center;
+}
+
+.formGroup{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.formGroup input{
+    padding: 5px;
+    margin:5px;
+    font-size:22px;
+    width: 95%;
+
+}
+
+
+  .fullname, .emailaddress{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-grow: 4;
+  }
+
+  .removeSeatButton{
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    border:none;
+    padding: 8px 16px;
+    margin-left:10px;
+    flex-grow: 1;
+  }
+  .removeSeatButton:hover{
+    background-color: rgb(35, 35, 35);
+    color:rgb(230, 210, 210);
+  }
+  .formGroup svg{
+    margin-bottom: 17px;
+    margin-right: 5px;
+    transform: scale(1.5);
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .formGroup svg{
+        display: none;
+      }
+    .formGroup{
+        justify-content: start;
+    }
+    .removeSeatButton{
+      flex-grow: 0;
+    }
+  }
+
+  .addTeammate{
+    background: none;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+  }
+  .addTeammate::before{
+    content: "+";
+    background-color: black;
+    color: white;;
+    border-radius: 40px;
+    margin-right: 10px;
+    line-height: 2;
+    width: 33px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addTeammate:hover{
+ transform: scale(1.1); }
+
+
+ .payingNow{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(232, 231, 236);
+  padding:15px;
+  border: 3px solid black;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+ }
+ .payingNow .description{
+  flex-basis: 60%;
+ }
+ .payingNow .pay{
+  flex-basis: 40%;
+ }
+ .payingNow h2, .payingNow h1{
+  margin: 0;
+  padding: 0;
+ }
+ @media only screen and (max-width: 768px) {
+  .payingNow{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payingNow .pay{
+    margin-top:30px;
+    margin-right:20px;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-items: end;
+    align-items: flex-end;
+  }
+ }
+
+ .payingNow .description .total{
+  font-size: 18px;
+  max-width: 300px;
+ }
+
+ .payingNow .description .price{
+  margin-top:20px;
+  font-size: 40px;
+  margin-bottom: 5px;
+ }
+
+
+ .goBackWrapper{
+  max-width: 700px;
+  margin:0 auto;
+ }
+ .goBack{
+  display: inline-flex;
+  margin: 0 auto;
+  position: relative;
+  left: 0px;
+  transition: all 200ms ease-in;
+ }
+ .goBack:hover{
+  position: relative;
+  left: -30px;
+  transition: all 200ms ease-in;
+ }
+ .goBack:hover .icon{
+  position: relative;
+  left: -10px;
+  transition: all 200ms ease-in;
+ }
+
+ .goBack .text{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  max-width: 150px;
+ }
